@@ -42,7 +42,7 @@ jobs:
           php-version: "8.1"
           tools: composer:v2
       - name: RUN NPM
-        run: ci
+        run: npm ci
       - name: RUN COMPOSER
         run: composer install
       - name: BUILD THEME
