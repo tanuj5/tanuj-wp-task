@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   run-github-action:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: ADD PHP v 8.1.x
         uses: shivammathur/setup-php@v2
