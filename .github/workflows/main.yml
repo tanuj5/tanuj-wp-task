@@ -35,14 +35,14 @@ jobs:
       - name: ADD NODE JS v12.x
         uses: actions/setup-node@v2
         with:
-          node-version: "12.x"
+          node-version: "16.x"
       - name: ADD PHP v 8.1.x
         uses: shivammathur/setup-php@v2
         with:
           php-version: "8.1"
           tools: composer:v2
       - name: RUN NPM
-        run: npm ci
+        run: npm install
       - name: RUN COMPOSER
         run: composer install
       - name: BUILD THEME
